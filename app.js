@@ -20,9 +20,10 @@ io.on("connection", function (socket) {
     })
 })
 
-app.get("/", function (req, res) {
-    res.end("<h1>Welcome to home Page</h1>")
-})
+app.use(express.static("client"));
+// app.get("/", function (req, res) {
+//     res.end("<h1>Welcome to home Page</h1>")
+// })
 
  //connection
 
